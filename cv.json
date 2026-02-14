@@ -1,18 +1,18 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full Stack Developer con más de 15 años de experiencia & Creador de Contenido de Programación",
-    "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
+    "name": "Fernando Daniel Menjivar Ponce",
+    "label": "Desarrollador Backend Jr. | Egresado del Téc. en Ingeniería en Desarrollo de Software",
+    "image": "/img/me.png",
+    "email": "menjivard762@gmail.com",
+    "phone": "+50370979408",
     "url": "https://midu.dev",
-    "summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
+    "summary": "Enfocado en la construcción de soluciones bien estructuradas, mantenibles y escalables.Me interesa formar parte de equipos donde pueda aportar valor real, asumir nuevos retos y continuar desarrollándome profesionalmente.",
     "location": {
       "address": "",
       "postalCode": "08820",
-      "city": "el Prat de Llobregat",
-      "countryCode": "ES",
-      "region": "España"
+      "city": "Centroamerica",
+      "countryCode": "SV", 
+      "region": "El Salvador"
     },
     "profiles": [
       {
@@ -111,42 +111,49 @@
   "skills": [
     {
       "name": "HTML",
-      "level": "Master",
+      "level": "Intermedio",
       "keywords": [
         "Desarrollo Web", "Frontend"
       ]
     },
     {
       "name": "CSS",
-      "level": "Master",
+      "level": "Basico",
       "keywords": [
         "Desarrollo Web", "Frontend", "Diseño Responsive"
       ]
     },
     {
-      "name": "JavaScript",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+      "name": "MongoDB",
+      "level":"Intermedio",
+      "keywords":[
+        "Bases de Datos", "NoSQL", "Almacenamiento de Datos", "Backend"
       ]
     },
     {
-      "name": "Tailwind",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+      "name": "WordPress",
+      "level":"Intermedio",
+      "keywords":[
+        "CMS", "Desarrollo Web"
       ]
     },
     {
-      "name": "TypeScript",
+      "name": "PHP",
+      "level": "Intermedio",
+      "keywords": [ 
+        "Desarrollo Web", "Backend", "Servidor"
+      ]
+    },
+    {
+      "name": "Laravel",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+        "Desarrollo Web", "Backend", "PHP", "Servidor"
       ]
     },
     {
       "name": "Node",
-      "level": "Avanzado",
+      "level": "Intermedio",
       "keywords": [
         "Desarrollo Web", "Backend", "JavaScript", "Servidor"
       ]
@@ -159,31 +166,24 @@
       ]
     },
     {
+      "name": "Bootstrap", 
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Diseño Responsive"
+      ]
+    },
+    {
       "name": "Git",
-      "level": "Avanzado",
+      "level": "Intermedio",
       "keywords": [
         "Control de Versiones", "Colaboración", "Código Fuente"
       ]
     },
     {
       "name": "GitHub",
-      "level": "Avanzado",
+      "level": "Intermedio",
       "keywords": [
         "Control de Versiones", "Colaboración", "Código Fuente", "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
       ]
     }
   ],
@@ -210,66 +210,44 @@
   }],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "Chep-Api",
       "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "description": "API para la gestión de recetas y menús, con base de datos MySQL.",
       "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
+        "PHP",
+        "Lumen",
+        "Laravel Eloquent",
+        "MySQL"
       ],
-      "url": "https://mars.codes"
+      "url": "https://github.com/fer-menjivar/chef-api",
+      "github": "https://github.com/fer-menjivar"
     },
     {
-      "name": "AdventJS",
-      "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
-      "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
+      "name":"Portfolio",
+      "isActive":true,
+      "description":"Portafolio personal para mostrar mi experiencia y proyectos.",
+      "highlights":[
+        "Astro",
+        "JSON",
+        "CSS"
       ],
-      "url": "https://adventjs.dev"
+      "url":"https://github.com/fer-menjivar/cv-fernando-menjivar",
+      "github":"https://github.com/fer-menjivar"
     },
     {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
-      "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
+      "name":"Sistema Prestamos de Equipo",
+      "isActive":true,
+      "description":"Portafolio personal para mostrar mi experiencia y proyectos.",
+      "highlights":[
+        "PHP", 
+        "Laravel",
+        "JavaScript",
+        "Blade",
+        "MySQL"
       ],
-      "url": "https://codember.dev"
-    },
-    {
-      "name": "codi.link",
-      "isActive": true,
-      "description": "Playground de código HTML, CSS y JavaScript para compartir",
-      "highlights": [
-        "100k visitas al mes",
-        "Desarrollado por la comunidad"
-      ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "Lista de pruebas técnicas de empresas para practicar programación",
-      "highlights": [
-        "100% gratuito",
-        "+500 soluciones de la comunidad"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-      "highlights": [
-        "+15k tickets repartidos",
-        "+50k espectadores en directo"
-      ],
-      "url": "https://miduconf.com"
+      "url":"https://github.com/fer-menjivar/sistema-prestamo-equipos?tab=readme-ov-file",
+      "github":"https://github.com/fer-menjivar"
     }
+
   ]
 }
