@@ -247,7 +247,18 @@
       ],
       "url":"https://github.com/fer-menjivar/sistema-prestamo-equipos?tab=readme-ov-file",
       "github":"https://github.com/fer-menjivar"
+    },
+    {
+      "name": "saas-biller-api-remake", 
+      "isActive": true,
+      "description": "API de facturación (SaaS Biller) en la que contribuí durante mis pasantías en MomotoLabs.",
+      "highlights": [
+        "PHP",
+        "Laravel",
+        "Blade"
+      ],
+      "url": "https://github.com/momotolabs/saas-biller-api-remake",
+      "github": "https://github.com/momotolabs"
     }
-
   ]
 }

@@ -39,7 +39,36 @@ const { image, summary, url } = basics;
 </html>
 
 <style is:global>
+  :root {
+    --background-color: #ffffff;
+    --text-color: #111827;
+    --secondary-text: #4b5563;
+    --border-color: #e5e7eb;
+    --skill-bg: #f3f4f6;
+    --skill-color: #374151;
+    --accent-color: #3b82f6;
+    --card-bg: #ffffff;
+    --hover-bg: #f9fafb;
+    --hover-border: #d1d5db;
+  }
+
+  .dark {
+    --background-color: #09090b;
+    --text-color: #f4f4f5;
+    --secondary-text: #a1a1aa;
+    --border-color: #27272a;
+    --skill-bg: #27272a;
+    --skill-color: #e4e4e7;
+    --accent-color: #3f3f46;
+    --card-bg: #09090b;
+    --hover-bg: #18181b;
+    --hover-border: #3f3f46;
+  }
+
   html {
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
     font-family:
       Menlo,
       Monaco,
@@ -47,7 +76,8 @@ const { image, summary, url } = basics;
       "Courier New",
       Courier,
       monospace;
-    background: #fff;
+    background: var(--background-color);
+    color: var(--text-color);
     letter-spacing: -0.025rem;
   }
 
@@ -93,7 +123,7 @@ const { image, summary, url } = basics;
   }
 
   p {
-    color: #666;
+    color: var(--secondary-text);
     font-size: 0.9rem;
     line-height: 1.5;
     margin: 0;

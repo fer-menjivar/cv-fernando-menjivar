@@ -1,27 +1,27 @@
 ---
-import { basics } from "@cv"
-import Section from "@/components/Section.astro"
-import Mail from "@/icons/Mail.astro"
-import Phone from "@/icons/Phone.astro"
-import X from "@/icons/X.astro"
-import LinkedIn from "@/icons/LinkedIn.astro"
-import GitHub from "@/icons/GitHub.astro"
-import WorldMap from "@/icons/WorldMap.astro"
-import type { SocialIcon } from "@/types"
+import { basics } from "@cv";
+import Section from "@/components/Section.astro";
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import X from "@/icons/X.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import GitHub from "@/icons/GitHub.astro";
+import WorldMap from "@/icons/WorldMap.astro";
+import type { SocialIcon } from "@/types";
 
-const { name, label, image, location, profiles, phone, email } = basics
-const { city, region } = location
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
   GitHub,
   LinkedIn,
   X,
-}
+};
 
-const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
-const linkedUrl = linkedInfo?.url
+const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
+const linkedUrl = linkedInfo?.url;
 
-const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 ---
 
 <Section>
@@ -63,7 +63,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
         }
         {
           profiles.map(({ network, url, username }) => {
-            const Icon = SOCIAL_ICONS[network]
+            const Icon = SOCIAL_ICONS[network];
 
             return (
               <a
@@ -74,7 +74,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
               >
                 <Icon />
               </a>
-            )
+            );
           })
         }
       </footer>
@@ -106,7 +106,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   }
 
   h2 {
-    color: #444;
+    color: var(--secondary-text);
     font-weight: 500;
     font-size: 1.1rem;
     text-wrap: balance;
@@ -120,7 +120,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   }
 
   span {
-    color: #666;
+    color: var(--secondary-text);
     display: flex;
     align-items: center;
     gap: 0.25rem;
@@ -129,7 +129,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   }
 
   footer {
-    color: #555;
+    color: var(--secondary-text);
     font-size: 0.65rem;
     display: flex;
     gap: 4px;
@@ -137,11 +137,11 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   }
 
   footer a {
-    color: #777;
+    color: var(--secondary-text);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #eee;
+    border: 1px solid var(--border-color);
     padding: 4px;
     height: 32px;
     width: 32px;
@@ -150,8 +150,8 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   }
 
   footer a:hover {
-    background: #eee;
-    border: 1px solid #ddd;
+    background: var(--hover-bg);
+    border: 1px solid var(--hover-border);
   }
 
   @media (width <= 700px) {
